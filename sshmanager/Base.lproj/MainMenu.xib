@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="sshmanager" customModuleProvider="target">
+            <connections>
+                <outlet property="mainMenu" destination="sax-DR-A5b" id="tRr-pD-EQ1"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu userInterfaceLayoutDirection="leftToRight" id="sax-DR-A5b" customClass="MainMenu" customModule="sshmanager" customModuleProvider="target">
+            <items>
+                <menuItem title="服务器" id="DgA-Pf-Ang">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="服务器" id="FDh-kO-MPn">
+                        <items>
+                            <menuItem title="服务器管理" id="wsM-0X-Kra">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="didClickServersManagerButton:" target="sax-DR-A5b" id="QAA-ln-qv6"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Tu1-qv-iEV"/>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="9qY-uu-nvu"/>
+                <menuItem title="设置" id="hgc-ok-7eh">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="didClickAppSettingButton:" target="sax-DR-A5b" id="Ffl-HJ-7ZH"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="捐助" id="OsV-Zp-jcR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="didClickDonateButton:" target="sax-DR-A5b" id="SBg-Mu-zD9"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="关于" id="9xx-kx-eqT">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="didClickAboutButton:" target="sax-DR-A5b" id="UY3-fY-I8P"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="7fA-rU-0o7"/>
+                <menuItem title="退出" id="IJV-pH-FLy" userLabel="退出">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="didClickQuitButton:" target="sax-DR-A5b" id="ePp-c6-6EE"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="serversMenu" destination="FDh-kO-MPn" id="u28-IS-dvF"/>
+            </connections>
+            <point key="canvasLocation" x="-4" y="-33"/>
+        </menu>
+    </objects>
+</document>

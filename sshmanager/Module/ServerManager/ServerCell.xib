@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="ServerCell" customModule="sshmanager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3E0-Gn-wq6">
+                    <rect key="frame" x="3" y="81" width="385" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Ypp-bM-ZBZ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="U9k-mE-KnH">
+                    <rect key="frame" x="0.0" y="-2" width="391" height="5"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="U9k-mE-KnH" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="4Zf-OZ-Bze"/>
+                <constraint firstItem="3E0-Gn-wq6" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="NVA-Qd-Jbh"/>
+                <constraint firstAttribute="trailing" secondItem="3E0-Gn-wq6" secondAttribute="trailing" constant="5" id="RUq-T3-W0z"/>
+                <constraint firstItem="3E0-Gn-wq6" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="5" id="UfJ-jd-tFc"/>
+                <constraint firstAttribute="trailing" secondItem="U9k-mE-KnH" secondAttribute="trailing" id="beb-JU-QyL"/>
+                <constraint firstAttribute="bottom" secondItem="U9k-mE-KnH" secondAttribute="bottom" id="icm-6l-10e"/>
+            </constraints>
+            <connections>
+                <outlet property="nameLabel" destination="3E0-Gn-wq6" id="Q2i-Wx-7qh"/>
+            </connections>
+            <point key="canvasLocation" x="87.5" y="121"/>
+        </customView>
+    </objects>
+</document>

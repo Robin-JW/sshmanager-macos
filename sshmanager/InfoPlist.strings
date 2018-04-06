@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  sshmanager
+
+  Created by gejw on 2018/4/6.
+  Copyright © 2018 robinge. All rights reserved.
+*/
+CFBundleDisplayName = "SSH帐号管理";
+CFBundleName = "SSH帐号管理";
