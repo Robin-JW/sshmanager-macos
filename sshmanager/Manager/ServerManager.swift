@@ -83,7 +83,9 @@ extension ServerManager.Server {
         do script "\(cmd)"
         end tell
         """
-        NSAppleScript(source: script)?.executeAndReturnError(nil)
+        DispatchQueue.global().async {
+            NSAppleScript(source: script)?.executeAndReturnError(nil)
+        }
     }
 
 }
